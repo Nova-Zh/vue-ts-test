@@ -25,7 +25,12 @@ module.exports = {
     extensions: ['.ts', '.js', '.vue', '.json'],
     alias: {
       vue$: 'vue/dist/vue.esm.js',
-      '@': resolve('src')
+      '@': resolve('src'),
+      '@components': '@/components',
+      '@views': '@/views',
+      store: '@/vuex', //vuex组件数据共享
+      router: '@/router',
+      static: resolve('static'), //静态资源
     }
   },
   module: {

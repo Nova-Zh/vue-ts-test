@@ -28,7 +28,7 @@ export default class App extends Vue {
 
   // 方法
   greet () {
-    alert('greeting: ' + this.msg)
+    console.log('greeting: ' + this.msg)
   }
 }
 </script>
